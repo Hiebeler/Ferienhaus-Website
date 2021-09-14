@@ -1,0 +1,91 @@
+@import "variables";
+@import "media-queries";
+
+
+:root {
+  --sidebar-width-used: 0px;
+  --sidebar-width-readed: 35vw;
+}
+
+@include big {
+  :root {
+      --sidebar-width-readed: 50vw;
+  }
+}
+
+@include middle {
+  :root {
+      --sidebar-width-readed: 100vw;
+  }
+}
+
+.firstPage {
+    height: 100vh;
+  
+    header {
+      height: 6rem;
+      padding: 0 $header-padding;
+  
+      .navbar {
+        padding: 0;
+  
+        &_logo {
+          display: flex;
+          align-items: center;
+          height: 6rem;
+          width: auto;
+          text-decoration: none;
+          color: inherit;
+        }
+  
+        &_bars {
+          button {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 2rem;
+
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+
+        &_content {
+          padding-left: 15%;
+          font-size: 0.9rem;
+          font-weight: 600;
+
+          ::before {
+            content: 'Call us: ' !important;
+            text-transform: uppercase;
+            color: #6b6e70;
+          }
+
+          @include middle {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .sidepanel {
+      background: $background;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: var(--sidebar-width-used);
+      transition: 0.5s;
+
+      a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+    }
+  }
+  

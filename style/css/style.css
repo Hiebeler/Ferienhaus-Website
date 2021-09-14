@@ -1,0 +1,127 @@
+:root {
+  --sidebar-width-used: 0px;
+  --sidebar-width-readed: 35vw;
+}
+
+@media screen and (max-width: 990px) {
+  :root {
+    --sidebar-width-readed: 50vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    --sidebar-width-readed: 100vw;
+  }
+}
+
+:root {
+  --sidebar-width-used: 0px;
+  --sidebar-width-readed: 35vw;
+}
+
+@media screen and (max-width: 990px) {
+  :root {
+    --sidebar-width-readed: 50vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    --sidebar-width-readed: 100vw;
+  }
+}
+
+:root {
+  --sidebar-width-used: 0px;
+  --sidebar-width-readed: 35vw;
+}
+
+@media screen and (max-width: 990px) {
+  :root {
+    --sidebar-width-readed: 50vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    --sidebar-width-readed: 100vw;
+  }
+}
+
+.firstPage {
+  height: 100vh;
+}
+
+.firstPage header {
+  height: 6rem;
+  padding: 0 50px;
+}
+
+.firstPage header .navbar {
+  padding: 0;
+}
+
+.firstPage header .navbar_logo {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  width: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.firstPage header .navbar_bars button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.firstPage header .navbar_bars button:hover {
+  color: #cee002;
+}
+
+.firstPage header .navbar_content {
+  padding-left: 15%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.firstPage header .navbar_content ::before {
+  content: 'Call us: ' !important;
+  text-transform: uppercase;
+  color: #6b6e70;
+}
+
+@media screen and (max-width: 750px) {
+  .firstPage header .navbar_content {
+    display: none;
+  }
+}
+
+.firstPage .sidepanel {
+  background: #272727;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: var(--sidebar-width-used);
+  transition: 0.5s;
+}
+
+.firstPage .sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+body {
+  color: white !important;
+  background: #272727 !important;
+  font-family: Arial !important;
+}
+/*# sourceMappingURL=style.css.map */
