@@ -1,0 +1,63 @@
+@import "media-queries";
+
+
+.umgebung {
+    padding-top: 100px;
+    margin-bottom: 100vh;
+
+    @include middle {
+        padding: 100px 20px 0 20px !important;
+    }
+
+    &_imageDiv {
+        margin-top: 30px;
+        &_images {
+            margin-top: 24px !important;
+            img {
+                width: 100%;
+            }
+
+            .umgebung_imageText {
+                display: none;
+            }
+        }
+
+        &_images:hover {
+
+            img {
+                display: none;
+            }
+
+            .umgebung_imageText {
+                display: block;
+                padding: 15px 20px 0 20px;
+                border: 2px $primary solid;
+                height: 100%;
+                position: relative;
+
+                h3 {
+                    font-size: 1.6rem;
+                }
+
+                p {
+                    color: $text-color-secundary;
+                    font-size: 0.8rem;
+                    margin: 0;
+                }
+
+                a {
+                    color: $primary;
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 20px;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

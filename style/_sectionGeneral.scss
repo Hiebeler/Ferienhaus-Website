@@ -1,8 +1,7 @@
 @import "media-queries";
 
 .general {
-    margin-bottom: 100vh;
-    padding: 168px 20px 0 20px !important;
+    padding-top: 168px;
 
     @include middle {
         padding: 100px 20px 0 20px !important;

@@ -1,6 +1,5 @@
 .general {
-  margin-bottom: 100vh;
-  padding: 168px 20px 0 20px !important;
+  padding-top: 168px;
 }
 
 @media screen and (max-width: 750px) {
@@ -152,7 +151,7 @@
   color: #6b6e70;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 992px) {
   .firstPage header .navbar_content {
     display: none;
   }
@@ -216,6 +215,68 @@
   display: flex;
   align-items: center;
   padding-left: 100px;
+}
+
+.umgebung {
+  padding-top: 100px;
+  margin-bottom: 100vh;
+}
+
+@media screen and (max-width: 750px) {
+  .umgebung {
+    padding: 100px 20px 0 20px !important;
+  }
+}
+
+.umgebung_imageDiv {
+  margin-top: 30px;
+}
+
+.umgebung_imageDiv_images {
+  margin-top: 24px !important;
+}
+
+.umgebung_imageDiv_images img {
+  width: 100%;
+}
+
+.umgebung_imageDiv_images .umgebung_imageText {
+  display: none;
+}
+
+.umgebung_imageDiv_images:hover img {
+  display: none;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText {
+  display: block;
+  padding: 15px 20px 0 20px;
+  border: 2px #cee002 solid;
+  height: 100%;
+  position: relative;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText h3 {
+  font-size: 1.6rem;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText p {
+  color: #707070;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText a {
+  color: #cee002;
+  font-size: 0.8rem;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText a:hover {
+  text-decoration: underline;
 }
 
 ::selection {
