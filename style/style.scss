@@ -1,10 +1,19 @@
 @import "_variables";
-@import "_navbar";
+@import "sectionGeneral";
+@import "sectionFirstPage";
+
+
+::selection {
+  background: $primary;
+}
 
 body {
   color: white !important;
   background: $background !important;
-  font-family: Arial !important;
+}
+
+h2 {
+  font-weight: 600 !important;
 }
 
 

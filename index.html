@@ -1,51 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/css/style.css" />
-    <script src="./script/js.js"></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/fd592c2ff4.js" crossorigin="anonymous"></script>
-    <title>Ferienhaus Lustenau</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/css/style.css" />
+  <script src="./script/js.js"></script>
 
-    <section class="firstPage">
-      <header  class="header">
-        <nav class="navbar">
-          <a href="" class="navbar_logo">
-            <h2>Ferienhaus Lustenau</h2>
-          </a>
-          <div class="navbar_content">
-            <p class="phoneNumber">(+43) 85475 545 24 54</p>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/fd592c2ff4.js" crossorigin="anonymous"></script>
+  <title>Ferienhaus Lustenau</title>
+</head>
+
+<body onscroll="slowScrollBackground()">
+
+  <section class="firstPage">
+    <header class="header">
+      <nav class="navbar">
+        <a href="" class="navbar_logo">
+          <h2>Ferienhaus Lustenau</h2>
+        </a>
+        <div class="navbar_content">
+          <p class="phoneNumber">info@ferienhaus-lustenau.at</p>
+        </div>
+        <div class="navbar_bars">
+          <button onclick="openNav();">
+            <p>&#9776</p>
+          </button>
+        </div>
+      </nav>
+
+    </header>
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="picture" id="background">
+      <h1>
+        Ferienhaus Lustenau
+      </h1>
+    </div>
+
+
+  </section>
+
+  <section>
+    <div class="container general">
+      <div class="row">
+        <div class="col-7">
+          <div class="headline">
+            <h6>Allgemeines</h6>
+            <h2>Mitten im Rheintal das Wunderschöne Ferienhaus Lustenau </h2>
           </div>
-          <div class="navbar_bars">
-            <button onclick="openNav();">
-              <p>&#9776</p>
-            </button>
-          </div>
-        </nav>
-          
-      </header>
 
-      <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+          <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+            fugiat iusto fuga praesentium optio, eaque rerum! Provident
+            similique accusantium nemo autem.
+          </div>
+
+          <div class="rating">
+            <div class="rating_text">
+              <div class="rating_text_number">
+                <h1>9.1</h1>
+              </div>
+              <div class="rating_text_bewertung">
+                <p>Bewertung</p>
+              </div>
+              
+            </div>
+
+            <div class="rating_rectangle">
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-5">
+          <div class="general_image">
+            <img src="./image/allgemeinAside.jpg" alt="">
+          </div>
+        </div>
       </div>
 
-    </section>
 
-  </body>
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <div class="maps">
+            <div class="maps_headline">
+              <h2>
+                Hier sind wir Zuhause
+              </h2>
+            </div>
+            <div class="maps_iframe">
+              <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=6890%20Lustenau%20Sonnenstra%C3%9Fe%2011&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
 
 </html>

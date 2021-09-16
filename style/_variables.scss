@@ -2,24 +2,10 @@
 
 $primary: #cee002;
 $background: #272727;
-$text-color-secundary: #515558;
+$text-color-secundary: #707070;
 
-$header-padding: 50px;
+$header-padding-big: 60px;
+$header-padding-small: 20px;
+
+
 $sidebar-width: 0;
-
-:root {
-    --sidebar-width-used: 0px;
-    --sidebar-width-readed: 35vw;
-}
-
-@include big {
-    :root {
-        --sidebar-width-readed: 50vw;
-    }
-  }
-
-@include middle {
-    :root {
-        --sidebar-width-readed: 100vw;
-    }
-  }

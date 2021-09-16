@@ -20,11 +20,15 @@
 }
 
 .firstPage {
-    height: 100vh;
-  
+
     header {
       height: 6rem;
-      padding: 0 $header-padding;
+      z-index: 10;
+      position: fixed;
+      background: $background;
+      width: 100vw;
+      padding: 0 var(--header-padding);
+
   
       .navbar {
         padding: 0;
@@ -48,6 +52,10 @@
             &:hover {
               color: $primary;
             }
+
+            p {
+              margin: 0;
+            }
           }
         }
 
@@ -57,13 +65,17 @@
           font-weight: 600;
 
           ::before {
-            content: 'Call us: ' !important;
+            content: 'Jetzt buchen: ' !important;
             text-transform: uppercase;
             color: #6b6e70;
           }
 
           @include middle {
             display: none;
+          }
+
+          p {
+            margin: 0;
           }
         }
       }
@@ -77,6 +89,7 @@
       height: 100vh;
       width: var(--sidebar-width-used);
       transition: 0.5s;
+      z-index: 11;
 
       a {
         padding: 8px 8px 8px 32px;

@@ -1,9 +1,97 @@
+.general {
+  margin-bottom: 100vh;
+  padding: 168px 20px 0 20px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .general {
+    padding: 100px 20px 0 20px !important;
+  }
+}
+
+.general .headline h6 {
+  color: #cee002;
+  text-transform: uppercase;
+}
+
+.general .headline h2 {
+  padding-top: 20px;
+}
+
+.general .content {
+  padding-top: 50px;
+  color: #707070;
+}
+
+.general_image {
+  padding-left: 50px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .general_image {
+    padding-top: 30px;
+    padding-left: 0 !important;
+  }
+}
+
+.general_image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.general .rating {
+  margin-top: 100px;
+  height: 145px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.general .rating_text {
+  vertical-align: middle;
+  float: right;
+  padding-left: 60px;
+  z-index: 1;
+}
+
+.general .rating_text_number {
+  display: inline-block;
+  right: 0;
+}
+
+.general .rating_text_number h1 {
+  font-size: 5rem;
+}
+
+.general .rating_text_bewertung {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.general .rating_rectangle {
+  z-index: 0;
+  position: absolute;
+  height: 145px;
+  width: 145px;
+  border: 4px #cee002 solid;
+  z-index: 0;
+}
+
+.general .maps {
+  margin-top: 100px;
+}
+
+.general .maps_iframe {
+  margin-top: 50px;
+}
+
 :root {
   --sidebar-width-used: 0px;
   --sidebar-width-readed: 35vw;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   :root {
     --sidebar-width-readed: 50vw;
   }
@@ -13,49 +101,15 @@
   :root {
     --sidebar-width-readed: 100vw;
   }
-}
-
-:root {
-  --sidebar-width-used: 0px;
-  --sidebar-width-readed: 35vw;
-}
-
-@media screen and (max-width: 990px) {
-  :root {
-    --sidebar-width-readed: 50vw;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  :root {
-    --sidebar-width-readed: 100vw;
-  }
-}
-
-:root {
-  --sidebar-width-used: 0px;
-  --sidebar-width-readed: 35vw;
-}
-
-@media screen and (max-width: 990px) {
-  :root {
-    --sidebar-width-readed: 50vw;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  :root {
-    --sidebar-width-readed: 100vw;
-  }
-}
-
-.firstPage {
-  height: 100vh;
 }
 
 .firstPage header {
   height: 6rem;
-  padding: 0 50px;
+  z-index: 10;
+  position: fixed;
+  background: #272727;
+  width: 100vw;
+  padding: 0 var(--header-padding);
 }
 
 .firstPage header .navbar {
@@ -82,6 +136,10 @@
   color: #cee002;
 }
 
+.firstPage header .navbar_bars button p {
+  margin: 0;
+}
+
 .firstPage header .navbar_content {
   padding-left: 15%;
   font-size: 0.9rem;
@@ -89,7 +147,7 @@
 }
 
 .firstPage header .navbar_content ::before {
-  content: 'Call us: ' !important;
+  content: 'Jetzt buchen: ' !important;
   text-transform: uppercase;
   color: #6b6e70;
 }
@@ -100,6 +158,10 @@
   }
 }
 
+.firstPage header .navbar_content p {
+  margin: 0;
+}
+
 .firstPage .sidepanel {
   background: #272727;
   position: fixed;
@@ -108,6 +170,7 @@
   height: 100vh;
   width: var(--sidebar-width-used);
   transition: 0.5s;
+  z-index: 11;
 }
 
 .firstPage .sidepanel a {
@@ -119,9 +182,52 @@
   transition: 0.3s;
 }
 
+:root {
+  --header-padding: 60px;
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    --header-padding: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --header-padding: 20px;
+  }
+}
+
+.firstPage {
+  height: 100vh;
+}
+
+.firstPage .picture {
+  padding: 0 var(--header-padding);
+  background-image: url("../../image/hintergrund.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  top: 6rem;
+  bottom: 0;
+  left: var(--header-padding);
+  right: var(--header-padding);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+::selection {
+  background: #cee002;
+}
+
 body {
   color: white !important;
   background: #272727 !important;
-  font-family: Arial !important;
+}
+
+h2 {
+  font-weight: 600 !important;
 }
 /*# sourceMappingURL=style.css.map */

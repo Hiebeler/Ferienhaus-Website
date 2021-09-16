@@ -1,0 +1,87 @@
+@import "media-queries";
+
+.general {
+    margin-bottom: 100vh;
+    padding: 168px 20px 0 20px !important;
+
+    @include middle {
+        padding: 100px 20px 0 20px !important;
+    }
+
+    .headline {
+
+        h6 {
+            color: $primary;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            padding-top: 20px;
+        }
+    }
+
+    .content {
+        padding-top: 50px;
+        color: $text-color-secundary;
+    }
+
+    &_image {
+        padding-left: 50px !important;
+
+        @include big {
+            padding-top: 30px;
+            padding-left: 0 !important;
+        } 
+        
+        img {
+            width: 100%;
+            max-width: 450px;
+        }
+    }
+
+    .rating {
+        margin-top: 100px;
+        height: 145px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &_text {
+            vertical-align: middle;
+            float: right;
+            padding-left: 60px;
+            z-index: 1;
+
+
+            &_number {
+                display: inline-block;
+                right: 0;
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+
+            &_bewertung {
+                display: inline-block;
+                font-size: 1.6rem;
+            }
+        }
+
+        &_rectangle {
+            z-index: 0;
+            position: absolute;
+            height: 145px;
+            width: 145px;
+            border: 4px $primary solid;
+            z-index: 0;
+        }
+    }
+
+    .maps {
+        margin-top: 100px;
+         &_iframe {
+            margin-top: 50px;
+         }
+    }
+}
