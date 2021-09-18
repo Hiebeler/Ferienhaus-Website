@@ -244,15 +244,19 @@
   display: none;
 }
 
-.umgebung_imageDiv_images:hover img {
-  display: none;
+.umgebung_imageDiv_images:hover {
+  position: relative;
 }
 
 .umgebung_imageDiv_images:hover .umgebung_imageText {
   display: block;
   padding: 15px 20px 0 20px;
   height: 100%;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #272727;
 }
 
 .umgebung_imageDiv_images:hover .umgebung_imageText h3 {
@@ -279,18 +283,20 @@
   text-decoration: underline;
 }
 
-.umgebung_imageText::before {
+.umgebung_border::before {
   content: "";
+  box-sizing: border-box;
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0px;
+  left: 0px;
   width: 0;
   height: 0;
   background: transparent;
-  border: 2px solid transparent;
+  border: 2px solid #cee002;
+  z-index: 1;
 }
 
-.umgebung_imageText:hover::before {
+.umgebung_border:hover::before {
   animation: animate 0.5s linear forwards;
 }
 
