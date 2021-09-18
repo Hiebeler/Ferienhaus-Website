@@ -11,8 +11,10 @@
 
     &_imageDiv {
         margin-top: 30px;
+
         &_images {
             margin-top: 24px !important;
+
             img {
                 width: 100%;
             }
@@ -31,12 +33,14 @@
             .umgebung_imageText {
                 display: block;
                 padding: 15px 20px 0 20px;
-                border: 2px $primary solid;
                 height: 100%;
                 position: relative;
+                // border: 1px $primary solid;
+
 
                 h3 {
-                    font-size: 1.6rem;
+                     font-size: 1.6rem;
+                     animation: animateTextHeadline 1s;
                 }
 
                 p {
@@ -59,5 +63,74 @@
                 }
             }
         }
+    }
+}
+
+.umgebung_imageText::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.umgebung_imageText:hover::before {
+    animation: animate 0.5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: $primary;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    25% {
+        width: 100%;
+        height: 0;
+        border-top-color: $primary;
+        border-right-color: $primary;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    50% {
+        width: 100%;
+        height: 100%;
+        border-top-color: $primary;
+        border-right-color: $primary;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    75% {
+        width: 100%;
+        height: 100%;
+        border-top-color: $primary;
+        border-right-color: $primary;
+        border-bottom-color: $primary;
+        border-left-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: $primary;
+        border-right-color: $primary;
+        border-bottom-color: $primary;
+        border-left-color: $primary;
+    }
+}
+
+@keyframes animateTextHeadline {
+    from {
+        color: transparent;
+    }
+    to {
+        color: #fff;
     }
 }
