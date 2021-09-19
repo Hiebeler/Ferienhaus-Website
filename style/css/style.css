@@ -85,6 +85,10 @@
   margin-top: 50px;
 }
 
+.general .imageGallery_headline {
+  margin-top: 100px;
+}
+
 :root {
   --sidebar-width-used: 0px;
   --sidebar-width-readed: 35vw;
@@ -241,14 +245,6 @@
 }
 
 .umgebung_imageDiv_images .umgebung_imageText {
-  display: none;
-}
-
-.umgebung_imageDiv_images:hover {
-  position: relative;
-}
-
-.umgebung_imageDiv_images:hover .umgebung_imageText {
   display: block;
   padding: 15px 20px 0 20px;
   height: 100%;
@@ -256,7 +252,17 @@
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: 1s ease;
   background-color: #272727;
+}
+
+.umgebung_imageDiv_images:hover {
+  position: relative;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText {
+  opacity: 1;
 }
 
 .umgebung_imageDiv_images:hover .umgebung_imageText h3 {
@@ -285,7 +291,6 @@
 
 .umgebung_border::before {
   content: "";
-  box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
