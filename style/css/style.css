@@ -226,6 +226,7 @@
 
 .umgebung_imageDiv_images {
   margin-top: 24px !important;
+  position: relative;
 }
 
 .umgebung_imageDiv_images img {
@@ -245,26 +246,18 @@
   background-color: #272727;
 }
 
-.umgebung_imageDiv_images:hover {
-  position: relative;
-}
-
-.umgebung_imageDiv_images:hover .umgebung_imageText {
-  opacity: 1;
-}
-
-.umgebung_imageDiv_images:hover .umgebung_imageText h3 {
+.umgebung_imageDiv_images .umgebung_imageText h3 {
   font-size: 1.6rem;
   animation: animateTextHeadline 1s;
 }
 
-.umgebung_imageDiv_images:hover .umgebung_imageText p {
+.umgebung_imageDiv_images .umgebung_imageText p {
   color: #707070;
   font-size: 0.8rem;
   margin: 0;
 }
 
-.umgebung_imageDiv_images:hover .umgebung_imageText a {
+.umgebung_imageDiv_images .umgebung_imageText a {
   color: #cee002;
   font-size: 0.8rem;
   text-decoration: none;
@@ -272,6 +265,10 @@
   bottom: 10px;
   left: 20px;
   z-index: 1;
+}
+
+.umgebung_imageDiv_images:hover .umgebung_imageText {
+  opacity: 1;
 }
 
 .umgebung_imageDiv_images:hover .umgebung_imageText a:hover {
@@ -286,7 +283,7 @@
   width: 0;
   height: 0;
   background: transparent;
-  border: 2px solid #cee002;
+  border: 2px solid transparent;
   z-index: 1;
 }
 
@@ -366,10 +363,15 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #272727;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #cee002;
+}
+
+scrollbars {
+  scrollbar-face-color: #cee002;
+  scrollbar-track-color: #272727;
 }
 /*# sourceMappingURL=style.css.map */

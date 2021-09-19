@@ -22,11 +22,14 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: $background;
 }
 
 ::-webkit-scrollbar-thumb {
   background: $primary;
 }
 
-
+scrollbars {
+  scrollbar-face-color: $primary;
+  scrollbar-track-color: $background;
+}

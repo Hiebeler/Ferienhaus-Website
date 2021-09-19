@@ -13,6 +13,8 @@
 
         &_images {
             margin-top: 24px !important;
+            position: relative;
+
 
             img {
                 width: 100%;
@@ -29,41 +31,37 @@
                 opacity: 0;
                 transition: 1s ease;
                 background-color: $background;
+
+                h3 {
+                    font-size: 1.6rem;
+                    animation: animateTextHeadline 1s;
+               }
+
+               p {
+                   color: $text-color-secundary;
+                   font-size: 0.8rem;
+                   margin: 0;
+               }
+
+               a {
+                   color: $primary;
+                   font-size: 0.8rem;
+                   text-decoration: none;
+                   position: absolute;
+                   bottom: 10px;
+                   left: 20px;
+                   z-index: 1;
+                   }
+
             }
         }
 
         &_images:hover {
-            position: relative;
-
 
             .umgebung_imageText {
                 opacity: 1;
 
-
-                // border: 1px $primary solid;
-
-
-                h3 {
-                     font-size: 1.6rem;
-                     animation: animateTextHeadline 1s;
-                }
-
-                p {
-                    color: $text-color-secundary;
-                    font-size: 0.8rem;
-                    margin: 0;
-                }
-
-                a {
-                    color: $primary;
-                    font-size: 0.8rem;
-                    text-decoration: none;
-                    position: absolute;
-                    bottom: 10px;
-                    left: 20px;
-                    z-index: 1;
-                    }
-
+               
                 a:hover {
                     text-decoration: underline;
                 }
@@ -80,7 +78,7 @@
     width: 0;
     height: 0;
     background: transparent;
-    border: 2px solid $primary;
+    border: 2px solid transparent;
     z-index: 1;
 }
 
