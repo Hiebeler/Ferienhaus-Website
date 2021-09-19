@@ -20,14 +20,6 @@
             }
 
             .umgebung_imageText {
-                display: none;
-            }
-        }
-
-        &_images:hover {
-            position: relative;
-
-            .umgebung_imageText {
                 display: block;
                 padding: 15px 20px 0 20px;
                 height: 100%;
@@ -35,7 +27,19 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                opacity: 0;
+                transition: 1s ease;
                 background-color: $background;
+            }
+        }
+
+        &_images:hover {
+            position: relative;
+
+
+            .umgebung_imageText {
+                opacity: 1;
+
 
                 // border: 1px $primary solid;
 
@@ -70,7 +74,6 @@
 
 .umgebung_border::before {
     content: "";
-    box-sizing: border-box;
     position: absolute;
     top: 0px;
     left: 0px;
