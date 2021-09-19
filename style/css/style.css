@@ -85,6 +85,10 @@
   margin-top: 50px;
 }
 
+.general .imageGallery_headline {
+  margin-top: 100px;
+}
+
 :root {
   --sidebar-width-used: 0px;
   --sidebar-width-readed: 35vw;
