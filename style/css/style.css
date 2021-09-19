@@ -153,6 +153,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   margin-right: 15vw;
+  cursor: pointer;
 }
 
 .firstPage header .navbar_content ::before {
