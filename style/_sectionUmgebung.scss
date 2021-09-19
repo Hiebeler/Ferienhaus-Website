@@ -3,8 +3,7 @@
 
 .umgebung {
     padding-top: 100px;
-    margin-bottom: 100vh;
-
+    margin-bottom: 50px;
     @include middle {
         padding: 100px 20px 0 20px !important;
     }
@@ -62,7 +61,8 @@
                     position: absolute;
                     bottom: 10px;
                     left: 20px;
-                }
+                    z-index: 1;
+                    }
 
                 a:hover {
                     text-decoration: underline;
@@ -87,6 +87,8 @@
 
 .umgebung_border:hover::before {
     animation: animate 0.5s linear forwards;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
 }
 
 @keyframes animate {

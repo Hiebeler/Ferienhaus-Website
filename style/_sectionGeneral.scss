@@ -84,6 +84,23 @@
          }
     }
 
+    .info {
+        margin-top: 100px;
+        &_list {
+            margin-top: 30px;
+            li {
+                font-size: 1.2rem;
+                padding-left: 20px;
+                color: $text-color-secundary;
+            }
+
+            li::marker {
+                color: $primary;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     .imageGallery_headline {
         margin-top: 100px;
         margin-bottom: 20px;

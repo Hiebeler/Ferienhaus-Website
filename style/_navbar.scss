@@ -42,27 +42,28 @@
           color: inherit;
         }
   
-        &_bars {
-          button {
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 2rem;
+        // &_bars {
+        //   button {
+        //     background: transparent;
+        //     border: none;
+        //     color: white;
+        //     font-size: 2rem;
 
-            &:hover {
-              color: $primary;
-            }
+        //     &:hover {
+        //       color: $primary;
+        //     }
 
-            p {
-              margin: 0;
-            }
-          }
-        }
+        //     p {
+        //       margin: 0;
+        //     }
+        //   }
+        // }
 
         &_content {
           padding-left: 15%;
           font-size: 0.9rem;
           font-weight: 600;
+          margin-right: 15vw;
 
           ::before {
             content: 'Jetzt buchen: ' !important;
@@ -74,31 +75,32 @@
             display: none;
           }
 
-          p {
-            margin: 0;
+          a {
+            text-decoration: none;
+            color: #fff;
           }
         }
       }
     }
 
-    .sidepanel {
-      background: $background;
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: var(--sidebar-width-used);
-      transition: 0.5s;
-      z-index: 11;
+    // .sidepanel {
+    //   background: $background;
+    //   position: fixed;
+    //   top: 0;
+    //   right: 0;
+    //   height: 100vh;
+    //   width: var(--sidebar-width-used);
+    //   transition: 0.5s;
+    //   z-index: 11;
 
-      a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #fff;
-        display: block;
-        transition: 0.3s;
-      }
-    }
+    //   a {
+    //     padding: 8px 8px 8px 32px;
+    //     text-decoration: none;
+    //     font-size: 25px;
+    //     color: #fff;
+    //     display: block;
+    //     transition: 0.3s;
+    //   }
+    // }
   }
   
