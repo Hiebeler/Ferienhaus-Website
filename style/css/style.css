@@ -106,7 +106,7 @@
 
 .general .imageGallery_headline {
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 :root {
@@ -153,13 +153,6 @@
   font-size: 0.9rem;
   font-weight: 600;
   margin-right: 15vw;
-  cursor: pointer;
-}
-
-.firstPage header .navbar_content ::before {
-  content: 'Jetzt buchen: ' !important;
-  text-transform: uppercase;
-  color: #6b6e70;
 }
 
 @media screen and (max-width: 992px) {
@@ -171,6 +164,16 @@
 .firstPage header .navbar_content a {
   text-decoration: none;
   color: #fff;
+}
+
+.firstPage header .navbar_content p {
+  color: #707070;
+  margin: 0;
+}
+
+.firstPage header .navbar_content a:hover {
+  color: #cee002;
+  cursor: pointer;
 }
 
 :root {
@@ -195,7 +198,7 @@
 
 .firstPage .picture {
   padding: 0 var(--header-padding);
-  background-image: url("../../image/hintergrund.jpg");
+  background-image: url("../../image/hintergrund.webp");
   background-size: cover;
   background-position: center top;
   position: absolute;
@@ -235,7 +238,7 @@
 
 .umgebung_imageDiv_images .umgebung_imageText {
   display: block;
-  padding: 15px 20px 0 20px;
+  padding: 15px 20px 0 30px;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -261,8 +264,8 @@
   font-size: 0.8rem;
   text-decoration: none;
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  bottom: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -353,6 +356,7 @@
 }
 
 body {
+  font-family: roboto !important;
   color: white !important;
   background: #272727 !important;
 }

@@ -9,99 +9,64 @@
 
 @include big {
   :root {
-      --sidebar-width-readed: 50vw;
+    --sidebar-width-readed: 50vw;
   }
 }
 
 @include middle {
   :root {
-      --sidebar-width-readed: 100vw;
+    --sidebar-width-readed: 100vw;
   }
 }
 
 .firstPage {
 
-    header {
-      height: 6rem;
-      z-index: 10;
-      position: fixed;
-      background: $background;
-      width: 100vw;
-      padding: 0 var(--header-padding);
+  header {
+    height: 6rem;
+    z-index: 10;
+    position: fixed;
+    background: $background;
+    width: 100vw;
+    padding: 0 var(--header-padding);
 
-  
-      .navbar {
-        padding: 0;
-  
-        &_logo {
-          display: flex;
-          align-items: center;
-          height: 6rem;
-          width: auto;
-          text-decoration: none;
-          color: inherit;
+
+    .navbar {
+      padding: 0;
+
+      &_logo {
+        display: flex;
+        align-items: center;
+        height: 6rem;
+        width: auto;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &_content {
+        padding-left: 15%;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-right: 15vw;
+
+        @include big {
+          display: none;
         }
-  
-        // &_bars {
-        //   button {
-        //     background: transparent;
-        //     border: none;
-        //     color: white;
-        //     font-size: 2rem;
 
-        //     &:hover {
-        //       color: $primary;
-        //     }
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
 
-        //     p {
-        //       margin: 0;
-        //     }
-        //   }
-        // }
+        p {
+          color: $text-color-secundary;
+          margin: 0;
+        }
 
-        &_content {
-          padding-left: 15%;
-          font-size: 0.9rem;
-          font-weight: 600;
-          margin-right: 15vw;
+        a:hover {
+          color: $primary;
           cursor: pointer;
-
-          ::before {
-            content: 'Jetzt buchen: ' !important;
-            text-transform: uppercase;
-            color: #6b6e70;
-          }
-
-          @include big {
-            display: none;
-          }
-
-          a {
-            text-decoration: none;
-            color: #fff;
-          }
         }
       }
     }
-
-    // .sidepanel {
-    //   background: $background;
-    //   position: fixed;
-    //   top: 0;
-    //   right: 0;
-    //   height: 100vh;
-    //   width: var(--sidebar-width-used);
-    //   transition: 0.5s;
-    //   z-index: 11;
-
-    //   a {
-    //     padding: 8px 8px 8px 32px;
-    //     text-decoration: none;
-    //     font-size: 25px;
-    //     color: #fff;
-    //     display: block;
-    //     transition: 0.3s;
-    //   }
-    // }
   }
-  
+}
