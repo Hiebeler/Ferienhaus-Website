@@ -30,7 +30,7 @@ h2 {
   background: $primary;
 }
 
-scrollbars {
-  scrollbar-face-color: $primary;
-  scrollbar-track-color: $background;
+* {
+  scrollbar-color: $primary $background;
+  scrollbar-width: thin;
 }

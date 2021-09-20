@@ -377,8 +377,8 @@ h2 {
   background: #cee002;
 }
 
-scrollbars {
-  scrollbar-face-color: #cee002;
-  scrollbar-track-color: #272727;
+* {
+  scrollbar-color: #cee002 #272727;
+  scrollbar-width: thin;
 }
 /*# sourceMappingURL=style.css.map */
