@@ -356,7 +356,7 @@
 }
 
 body {
-  font-family: roboto !important;
+  font-family: roboto, Arial, Helvetica, sans-serif !important;
   color: white !important;
   background: #272727 !important;
 }
