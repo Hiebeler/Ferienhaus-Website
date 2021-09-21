@@ -211,7 +211,10 @@
   transition: 1s ease;
 }
 .umgebung_imageDiv_images .umgebung_imageText h3 {
+<<<<<<< HEAD
   font-weight: bold;
+=======
+>>>>>>> 3a9b3dbcfdb918922349372361d36e1a1f70e114
   font-size: 1.6rem;
   animation: animateTextHeadline 1s;
 }
