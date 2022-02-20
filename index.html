@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style/style.css" />
     <script src="./script/js.js"></script>
 
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/fd592c2ff4.js" crossorigin="anonymous"></script>
@@ -76,11 +80,27 @@
                                 Hier sind wir Zuhause
                             </h2>
                         </div>
-                        <div class="maps_iframe">
+                        <!-- <div class="maps_iframe">
                             <iframe width="100%" height="400" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=6890%20Lustenau%20Sonnenstra%C3%9Fe%2011&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                                src="mapbox://styles/hiebeler05/ckzdwfedv006a14qeo8mz9hif"
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        </div>
+                        </div> -->
+                        <div id='map' class="maps_iframe" style='width: 100%; height: 500px'></div>
+                        <script>
+                            mapboxgl.accessToken = 'pk.eyJ1IjoiaGllYmVsZXIwNSIsImEiOiJja3pkdzViaG0wYjRxMnFwanU2MDJmNHJxIn0.nUxMWK5ZDt0tF0ve0S8y9Q';
+                            var map = new mapboxgl.Map({
+                                container: 'map',
+                                style: 'mapbox://styles/hiebeler05/ckzvf0v7e00v714p8vt88cqy2',
+                                center: [9.656764, 47.423255],
+                                zoom: 8
+                            });
+                            const marker = new mapboxgl.Marker({
+                                color: "#FFFFFF",
+                                draggable: false
+                            }).setLngLat([9.656755434538954, 47.42326])
+                                .addTo(map);
+                            marker.getElement().addEventListener('click', function (e) { window.location.href = "https://goo.gl/maps/9d1vtYwMzAW7mWpG9"; });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -200,10 +220,10 @@
                 </div>
 
                 <!-- Next/previous controls -->
-                
+
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </section>
 
