@@ -110,6 +110,31 @@
   font-size: 1.5rem;
 }
 
+.general .info_list .phoneNumber_dot {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .general .info_list .phoneNumber_dot {
+    display: list-item;
+  }
+}
+
+.general .info_list .phoneNumber_dot .phoneNumber_small a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.general .info_list .phoneNumber_dot .phoneNumber_small p {
+  color: #707070;
+  margin: 0;
+}
+
+.general .info_list .phoneNumber_dot .phoneNumber_small a:hover {
+  color: #cee002;
+  cursor: pointer;
+}
+
 .general .imageGallery_headline {
   margin-top: 100px;
   margin-bottom: 50px;

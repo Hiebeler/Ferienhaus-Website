@@ -30,8 +30,8 @@
         @include big {
             padding-top: 30px;
             padding-left: 0 !important;
-        } 
-        
+        }
+
         img {
             width: 100%;
             max-width: 450px;
@@ -56,6 +56,7 @@
             &_number {
                 display: inline-block;
                 right: 0;
+
                 h1 {
                     font-size: 5rem;
                 }
@@ -79,15 +80,18 @@
 
     .maps {
         margin-top: 100px;
-         &_iframe {
+
+        &_iframe {
             margin-top: 50px;
-         }
+        }
     }
 
     .info {
         margin-top: 100px;
+
         &_list {
             margin-top: 30px;
+
             li {
                 font-size: 1.2rem;
                 padding-left: 20px;
@@ -97,6 +101,33 @@
             li::marker {
                 color: $primary;
                 font-size: 1.5rem;
+            }
+
+            .phoneNumber_dot {
+                display: none;
+
+                @include big {
+                    display: list-item;
+                }
+
+                .phoneNumber_small {
+
+
+                    a {
+                        text-decoration: underline;
+                        color: #fff;
+                    }
+
+                    p {
+                        color: $text-color-secundary;
+                        margin: 0;
+                    }
+
+                    a:hover {
+                        color: $primary;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
