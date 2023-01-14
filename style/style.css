@@ -301,6 +301,13 @@
   margin: 0;
 }
 
+.umgebung_imageDiv_images .umgebung_imageText #fotoQuelle {
+  position: absolute;
+  font-size: 0.6rem;
+  bottom: 20px;
+  right: 30px;
+}
+
 .umgebung_imageDiv_images .umgebung_imageText a {
   color: #cee002;
   font-size: 0.8rem;

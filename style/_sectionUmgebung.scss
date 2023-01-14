@@ -44,6 +44,13 @@
                     margin: 0;
                 }
 
+                #fotoQuelle {
+                    position: absolute;
+                    font-size: 0.6rem;
+                    bottom: 20px;
+                    right: 30px;
+                }
+
                 a {
                     color: $primary;
                     font-size: 0.8rem;
@@ -80,6 +87,7 @@
        
     }
 }
+
 
 .image {
     position: relative;
