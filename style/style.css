@@ -564,4 +564,20 @@ h2 {
   scrollbar-color: #cee002 #272727;
   scrollbar-width: thin;
 }
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-section a:hover {
+  color: #F7CE33;
+}
+
 /*# sourceMappingURL=style.css.map */
