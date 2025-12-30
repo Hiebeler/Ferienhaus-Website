@@ -147,6 +147,9 @@
   text-decoration: none;
   color: inherit;
 }
+.firstPage header .navbar_logo h1 {
+  font-size: xx-large;
+}
 .firstPage header .navbar_content {
   padding-left: 15%;
   font-size: 0.9rem;
@@ -453,7 +456,7 @@ body {
   background: #272727 !important;
 }
 
-h2 {
+h2, h1 {
   font-weight: 600 !important;
 }
 
