@@ -96,6 +96,10 @@
                 font-size: 1.2rem;
                 padding-left: 20px;
                 color: $text-color-secundary;
+
+                a{
+                    color: $primary
+                }
             }
 
             li::marker {
