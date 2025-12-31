@@ -2,6 +2,7 @@
 @import "sectionGeneral";
 @import "sectionFirstPage";
 @import "sectionUmgebung";
+@import "sectionFooter";
 @import "modal";
 
 
@@ -9,15 +10,32 @@
   background: $primary;
 }
 
+@font-face {
+  font-family: biomeLight; /* set name */
+  src: url(/font/BiomeW01-Light.woff2); /* url of the font */
+}
+
+
+@font-face {
+  font-family: biomeLight; /* set name */
+  src: url(/font/BiomeW01-Regular.woff2); /* url of the font */
+  font-weight: bold;
+}
+
 body {
-  font-family: roboto, Arial, Helvetica, sans-serif !important;
+  font-family: biomeLight, roboto, Arial, Helvetica, sans-serif !important;
   color: white !important;
   background: $background !important;
+}
+
+p, li, body {
+  font-size: large;
 }
 
 h2, h1 {
   font-weight: 600 !important;
 }
+
 
 
 ::-webkit-scrollbar {

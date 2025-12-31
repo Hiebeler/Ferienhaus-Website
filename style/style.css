@@ -9,6 +9,8 @@
 .general .headline h6 {
   color: #cee002;
   text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
 }
 .general .headline h2 {
   padding-top: 20px;
@@ -77,7 +79,6 @@
   margin-top: 30px;
 }
 .general .info_list li {
-  font-size: 1.2rem;
   padding-left: 20px;
   color: #707070;
 }
@@ -98,14 +99,14 @@
 }
 .general .info_list .phoneNumber_dot .phoneNumber_small a {
   text-decoration: underline;
-  color: #fff;
+  color: #cee002;
 }
 .general .info_list .phoneNumber_dot .phoneNumber_small p {
   color: #707070;
   margin: 0;
 }
 .general .info_list .phoneNumber_dot .phoneNumber_small a:hover {
-  color: #cee002;
+  color: #9ba900;
   cursor: pointer;
 }
 .general .imageGallery_headline {
@@ -140,6 +141,7 @@
   padding: 0;
 }
 .firstPage header .navbar_logo {
+  position: relative;
   display: flex;
   align-items: center;
   height: 6rem;
@@ -149,6 +151,10 @@
 }
 .firstPage header .navbar_logo h1 {
   font-size: xx-large;
+}
+.firstPage header .navbar_logo img {
+  height: 6rem;
+  padding: 10px;
 }
 .firstPage header .navbar_content {
   padding-left: 15%;
@@ -244,7 +250,7 @@
 }
 .umgebung_imageDiv_images .umgebung_imageText p {
   color: #707070;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 .umgebung_imageDiv_images .umgebung_imageText #fotoQuelle {
@@ -338,6 +344,26 @@
     color: #fff;
   }
 }
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-section a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #cee002;
+}
+.footer-section a:hover {
+  color: #9ba900;
+}
+.footer-section .fontCredits {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  font-size: small;
+}
+
 .row > .column {
   padding: 0 8px;
 }
@@ -450,10 +476,23 @@
   background: #cee002;
 }
 
+@font-face {
+  font-family: biomeLight; /* set name */
+  src: url(/font/BiomeW01-Light.woff2); /* url of the font */
+}
+@font-face {
+  font-family: biomeLight; /* set name */
+  src: url(/font/BiomeW01-Regular.woff2); /* url of the font */
+  font-weight: bold;
+}
 body {
-  font-family: roboto, Arial, Helvetica, sans-serif !important;
+  font-family: biomeLight, roboto, Arial, Helvetica, sans-serif !important;
   color: white !important;
   background: #272727 !important;
+}
+
+p, li, body {
+  font-size: large;
 }
 
 h2, h1 {

@@ -34,6 +34,7 @@
       padding: 0;
 
       &_logo {
+        position: relative;
         display: flex;
         align-items: center;
         height: 6rem;
@@ -42,6 +43,10 @@
         color: inherit;
         h1{
           font-size: xx-large;
+        }
+        img {
+          height: 6rem;
+          padding: 10px;
         }
       }
 
