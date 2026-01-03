@@ -1,34 +1,49 @@
 @import "_navbar";
 
 :root {
-    --header-padding: 60px;
-  
-    @include middle {
-      --header-padding: 30px;
+  --header-padding: 60px;
+
+  @include middle {
+    --header-padding: 30px;
+  }
+
+  @include small {
+    --header-padding: 20px;
+  }
+}
+
+.firstPage {
+  height: 100vh;
+
+  .picture {
+    background-size: cover;
+    background-position: center top;
+
+    // 1. Mobile & Tablet (Up to 1024px)
+    @media (max-width: 1024px) {
+      background-image: url("../image/hintergrund_small.avif");
     }
-  
-    @include small {
-      --header-padding: 20px;
+
+    // 2. Desktop (Above 1024px)
+    @media (min-width: 1025px) {
+      background-image: image-set(url("../image/hintergrund_medium.avif") 1x,
+          url("../image/hintergrund_full.avif") 2x);
+      // Webkit fallback
+      background-image: -webkit-image-set(url("../image/hintergrund_medium.avif") 1x,
+          url("../image/hintergrund_full.avif") 2x);
     }
   }
 
-.firstPage {
-    height: 100vh;
-  
-  
-    .picture {
-      padding: 0 var(--header-padding);
-      background-image: url("../image/hintergrund.webp");
-      background-size: cover;
-      background-position: center top;
-      position: absolute;
-      top: 6rem;
-      bottom: 0;
-      left: var(--header-padding);
-      right: var(--header-padding);
-      z-index: 0;
-      display: flex;
-      align-items: center;
-      padding-left: 100px;
-    }
+  .picture {
+    padding: 0 var(--header-padding);
+    position: absolute;
+    top: 6rem;
+    bottom: 0;
+    left: var(--header-padding);
+    right: var(--header-padding);
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
   }
+}
