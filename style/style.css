@@ -20,7 +20,10 @@
   color: #707070;
 }
 .general_image {
+  height: 100%;
   padding-left: 50px !important;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 992px) {
   .general_image {
