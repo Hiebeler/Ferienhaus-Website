@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <script src="./script/js.js"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+    <script src="local-env.js" onerror="this.remove()"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="general_image">
-                        <img src="./image/allgemainAside_new.avif" alt="">
+                        <img src="./image/allgemeinAside_new2.avif" alt="">
                     </div>
                 </div>
             </div>
@@ -89,7 +89,8 @@
                         </div>
                         <div id='map' class="maps_iframe" style='width: 100%; height: 500px'></div>
                         <script>
-                            mapboxgl.accessToken = 'pk.eyJ1IjoiaGllYmVsZXIwNSIsImEiOiJja3pkdzViaG0wYjRxMnFwanU2MDJmNHJxIn0.nUxMWK5ZDt0tF0ve0S8y9Q';
+                            const token = window.ENV ? window.ENV.MAPBOX_TOKEN : '';
+                            mapboxgl.accessToken = token;
                             var map = new mapboxgl.Map({
                                 container: 'map',
                                 style: 'mapbox://styles/hiebeler05/ckzvf0v7e00v714p8vt88cqy2',
@@ -122,7 +123,7 @@
                                 <li>118 € pro Nacht inklusive Bettwäsche, Handtücher (ab 7 Nächten 10% Rabatt)</li>
                                 <li>29 €/Person und Nacht verrechnen wir ab der 3. Person zusätzlich (ab 7 Nächten 10%
                                     Rabatt)</li>
-                                                                    <li>80 € einmalige Reinigungspauschale</li>
+                                <li>80 € einmalige Reinigungspauschale</li>
 
                                 <li>4 €/Person und Nacht Gästetaxe (ab 15 Jahre)</li>
                                 <li>Gratis Bus & Bahn Karte für ganz Vorarlberg und Grenzbahnhöfe <a
@@ -158,10 +159,12 @@
                                 class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/haus8.webp" onclick="openModal();currentSlide(4)"
                                 class="w-100 shadow-1-strong mb-4">
-                            <img src="./image/HausImageGallery/haus6.webp" onclick="openModal();currentSlide(7)"
+
+                            <img src="./image/HausImageGallery/aussen4_thumb.avif" onclick="openModal();currentSlide(13)"
                                 class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/haus13.webp" onclick="openModal();currentSlide(10)"
                                 class="w-100 shadow-1-strong mb-4">
+
                         </div>
                         <div class="col-md-4">
                             <img src="./image/HausImageGallery/haus5.webp" onclick="openModal();currentSlide(2)"
@@ -170,20 +173,23 @@
                                 class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/hochformat2.webp" onclick="openModal();currentSlide(8)"
                                 class="w-100 shadow-1-strong mb-4">
+                            <img src="./image/HausImageGallery/aussen5_thumb.avif" onclick="openModal();currentSlide(14)"
+                                class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/haus14.webp" onclick="openModal();currentSlide(11)"
                                 class="w-100 shadow-1-strong mb-4">
+
                         </div>
                         <div class="col-md-4">
                             <img src="./image/HausImageGallery/haus4.webp" onclick="openModal();currentSlide(3)"
                                 class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/hochformat3.webp" onclick="openModal();currentSlide(6)"
                                 class="w-100 shadow-1-strong mb-4">
+                            <img src="./image/HausImageGallery/haus6.webp" onclick="openModal();currentSlide(7)"
+                                class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/haus9.webp" onclick="openModal();currentSlide(9)"
                                 class="w-100 shadow-1-strong mb-4">
                             <img src="./image/HausImageGallery/aussen3.avif" onclick="openModal();currentSlide(12)"
                                 class="w-100 shadow-1-strong mb-4">
-                        </div>
-                        <div class="col-md-4">
                         </div>
                     </div>
                 </div>
@@ -235,7 +241,12 @@
                 <div class="mySlides">
                     <img src="./image/HausImageGallery/aussen3.avif">
                 </div>
-
+                <div class="mySlides">
+                    <img src="./image/HausImageGallery/aussen4.avif">
+                </div>
+                                <div class="mySlides">
+                    <img src="./image/HausImageGallery/aussen5.avif">
+                </div>
                 <!-- Next/previous controls -->
 
             </div>
