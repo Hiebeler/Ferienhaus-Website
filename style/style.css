@@ -17,7 +17,7 @@
 }
 .general .content {
   padding-top: 50px;
-  color: #707070;
+  color: #b6b6b6;
 }
 .general_image {
   height: 100%;
@@ -83,7 +83,7 @@
 }
 .general .info_list li {
   padding-left: 20px;
-  color: #707070;
+  color: #b6b6b6;
 }
 .general .info_list li a {
   color: #cee002;
@@ -105,7 +105,7 @@
   color: #cee002;
 }
 .general .info_list .phoneNumber_dot .phoneNumber_small p {
-  color: #707070;
+  color: #b6b6b6;
   margin: 0;
 }
 .general .info_list .phoneNumber_dot .phoneNumber_small a:hover {
@@ -172,7 +172,7 @@
   color: #fff;
 }
 .firstPage header .navbar_content p {
-  color: #707070;
+  color: #b6b6b6;
   margin: 0;
 }
 .firstPage header .navbar_content a:hover {
@@ -261,7 +261,7 @@
   animation: animateTextHeadline 1s;
 }
 .umgebung_imageDiv_images .umgebung_imageText p {
-  color: #707070;
+  color: #b6b6b6;
   font-size: 0.9rem;
   margin: 0;
 }
