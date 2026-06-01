@@ -40,8 +40,15 @@
 
                 p {
                     color: $text-color-secundary;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     margin: 0;
+                }
+
+                #fotoQuelle {
+                    position: absolute;
+                    font-size: 0.6rem;
+                    bottom: 20px;
+                    right: 30px;
                 }
 
                 a {
@@ -80,6 +87,7 @@
        
     }
 }
+
 
 .image {
     position: relative;

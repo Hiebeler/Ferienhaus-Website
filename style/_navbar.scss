@@ -26,27 +26,32 @@
     z-index: 10;
     position: fixed;
     background: $background;
-    width: 100vw;
+    width: 100%;
     padding: 0 var(--header-padding);
+    margin: 0;
 
 
     .navbar {
       padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
       &_logo {
+        position: relative;
         display: flex;
         align-items: center;
         height: 6rem;
         width: auto;
-        text-decoration: none;
-        color: inherit;
+        img {
+          height: 6rem;
+          padding: 10px;
+        }
       }
 
       &_content {
-        padding-left: 15%;
         font-size: 0.9rem;
         font-weight: 600;
-        margin-right: 15vw;
 
         @include big {
           display: none;
